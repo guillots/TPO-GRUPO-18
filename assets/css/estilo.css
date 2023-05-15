@@ -89,15 +89,20 @@ button {
 }
 
 .bienvenidos{
-    display: flex;
-    flex-direction: column;
     align-self: flex-end;
     grid-area: bienvenidos;
     margin-left: 2rem;
-    
+    font-size: 3rem;
     /* border: 1px solid red;
-    background-color: #404041; */
-    
+    background-color: #404041; */    
+}
+
+.bienvenidos::after{
+    content: "éxito digital";
+    font-weight: 900;
+    font-style: italic;
+    color:#A7BF4E;
+    text-decoration: underline;
 }
 
 .headline {
@@ -110,10 +115,13 @@ button {
 }
 
 .markdig3::after{
-    content: "vanguardia";
+    content: "vanguardia.";
     font-weight: 800;
+    font-style: italic;
     color:#A7BF4E;
 }
+
+
 
 
 
