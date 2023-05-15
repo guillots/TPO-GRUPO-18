@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    /* Paleta de colores */
+    --color-verde-oscuro: #A7BF4E; 
+    --color-verde-claro: #D4F266;
+    --color-casi-blanco: #F2F2F2;
+    --color-gris: #404040;
+    --color-gris-oscuro: #0D0D0D;
+}
+
+* {
+/* margin: 1px;
+padding: 5px; */
+box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Inter', sans-serif;
+    background: var(--color-casi-blanco);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2rem;}
+h3 { font-size: 1.75rem;}
+h4 { font-size: 1.5rem;}
+
+p { 
+    font-size: 1rem;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+button { 
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 20px;
+}
+
+#navbar { 
+    overflow: auto;
+    padding: 20px 0;
+    background-color: var(--color-gris);
+    color: #F2F2F2;
+}
+
+#navbar .logo { 
+    float: left;
+    padding-top: 16px;
+    font-size: 25px;
+}
+
+#navbar ul { 
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{ 
+    float: left;
+}
+
+#navbar ul li a{ 
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #F2F2F2;
+}
+
+.container{
+    display: grid;    
+    grid-template-columns: 1.5r 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "bienvenidos persona"
+        "headline persona"
+        "headline persona"
+        "headline persona";
+    /* grid-gap: 2rem; */
+    border: 5px solid green;
+    background-color: #F2F2F2;
+}
+
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    grid-area: bienvenidos;
+    margin-left: 2rem;
+    
+    /* border: 1px solid red;
+    background-color: #404041; */
+    
+}
+
+.headline {
+    grid-area: headline;
+    position: relative;
+    top: -40px;
+    margin-left: 3rem;    
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.markdig3::after{
+    content: "vanguardia";
+    font-weight: 800;
+    color:#A7BF4E;
+}
+
+
+
+/* .markdig1{
+  
+    background-color: bisque;
+    grid-area: markdig1;
+    border: 1px solid red;
+    font-size: 1rem;
+}
+.markdig2{
+ 
+    background-color: bisque;
+    grid-area: markdig2;
+    border: 1px solid red;
+    font-size: 1rem;
+}
+.markdig3{
+ 
+    background-color: bisque;
+    grid-area: markdig3;
+    border: 1px solid red;
+    font-size: 1rem;
+} */
+
+.persona{
+    grid-area: persona;
+    height: 50vh;
+    position: relative;
+    /* border: 1px solid red;
+    background-color: burlywood; */
+}
+
+.grande { 
+    font-size: 1.2rem;
+}
+
+
+#quienes-somos { 
+    text-align: center;
+    padding: 100px 0
+}
+
+#clientes { 
+    background-image: linear-gradient(to right, #404040, #404041);
+    padding: 50px 0;
+    width: auto;
+    height: auto;
+}
+
+.carrousel { 
+    float:left;
+    width: 20%;
+    text-align: center;
+}
+
+.carrousel img { 
+    height: 120px;
+}
+
+#servicios { 
+    text-align: center;
+    padding: 100px 0;
+}
+
+#servicios h3{ 
+    padding-bottom: 40px;
+}
+
+#contacto { 
+    padding: 100px 0;
+}
+
+#contacto h3 { 
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+form label { 
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+form .form-control { 
+    display: block;
+    width: 100%;
+    padding: .375rem .7rem;
+    font-size: 1rem;
+}
+
+#contacto form { 
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contacto button { 
+    width: 100%
+}
+
+footer { 
+    text-align: center;
+    padding: 40px;
+}
