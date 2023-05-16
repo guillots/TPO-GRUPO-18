@@ -75,21 +75,30 @@ button {
 }
 
 .container{
-    display: grid;    
-    grid-template-columns: 1.5r 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "bienvenidos persona"
-        "headline persona"
-        "headline persona"
-        "headline persona";
+        "titulo-headline persona"
+        "titulo-headline persona"
+        "titulo-headline persona"
+        "titulo-headline persona";
     /* grid-gap: 2rem; */
-    border: 5px solid green;
+    /* border: 5px solid green; */
     background-color: var(--color-casi-blanco);
 }
 
-.bienvenidos{
-    align-self: flex-end;
+.titulo-headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 5rem;
+    grid-area: titulo-headline;
+    /* border: solid red ; */
+}
+
+.bienvenidos{    
     grid-area: bienvenidos;
     margin-left: 2rem;
     font-size: 3rem;
@@ -101,24 +110,24 @@ button {
     content: "éxito digital";
     font-weight: 900;
     font-style: italic;
-    color: var(--color-verde-claro);
+    color: var(--color-verde-oscuro);
     text-decoration: underline;
 }
 
 .headline {
-    grid-area: headline;
-    position: relative;
-    top: -40px;
-    margin-left: 3rem;    
+    /* grid-area: headline;    
+    margin-left: 10rem;  */
     font-weight: 400;
     font-size: 2rem;
+    border: 1px solid red;
 }
 
 .markdig3::after{
     content: "vanguardia.";
     font-weight: 800;
     font-style: italic;
-    color: var(--color-verde-claro);
+    color: var(--color-verde-oscuro);
+    text-decoration: underline;
 }
 
 
