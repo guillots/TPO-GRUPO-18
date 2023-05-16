@@ -52,7 +52,7 @@ button {
   
   .quieto{
     
-    width: 95%;
+    /* width: 95%; */
     max-width: 1000;
     margin: auto;
   }
@@ -74,8 +74,11 @@ transition: all ease .10s;
 }
   
 header nav ul {
+    width: 100vw;
+    background: var(--color-gris);
     list-style: none;
     overflow: hidden;
+    /* border: var(--borde-chequeo); */
 }
   
 header nav ul li {
@@ -87,6 +90,7 @@ display: block;
 padding: 20px;
 color: azure;
 text-decoration: none;
+
 }
   
 header nav ul li a:hover {
