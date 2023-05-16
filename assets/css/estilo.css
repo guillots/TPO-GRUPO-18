@@ -12,9 +12,11 @@
 }
 
 * {
-/* margin: 1px;
-padding: 5px; */
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body { 
@@ -46,55 +48,50 @@ button {
     font-size: 18px;
     padding: 12px 20px;
 }
-*{
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+
   
   .quieto{
+    
     width: 95%;
     max-width: 1000;
     margin: auto;
   }
   
-    .quieto p{
+.quieto p {
     margin-bottom: 40px;
-  }
+}
   
-  header {
-    display: block;
-  }
+header {
+display: sticky;
+}
   
-  header nav{
-    background: grey;
-    margin-bottom: 10px;
-    -webkit-transition: all ease .10s;
-    -o-transition: all ease .10s;
-    transition: all ease .10s;
-  }
+header nav{
+background: var(--color-gris);
+margin-bottom: 10px;
+-webkit-transition: all ease .10s;
+-o-transition: all ease .10s;
+transition: all ease .10s;
+}
   
-      header nav ul {
-      list-style: none;
-      overflow: hidden;
-    }
+header nav ul {
+    list-style: none;
+    overflow: hidden;
+}
   
-        header nav ul li {
-      float:left;
-    }
+header nav ul li {
+    float:left;
+}
   
-          header nav ul li a {
-            display: block;
-            padding: 40px;
-            color: azure;
-            text-decoration: none;
-          }
+header nav ul li a {
+display: block;
+padding: 20px;
+color: azure;
+text-decoration: none;
+}
   
-          header nav ul li a:hover {
-            background: black;
-          }
+header nav ul li a:hover {
+background: black;
+}
   
   .menu-fixed {
     position: fixed;
