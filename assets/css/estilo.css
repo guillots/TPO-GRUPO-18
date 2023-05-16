@@ -7,6 +7,8 @@
     --color-casi-blanco: #F2F2F2;
     --color-gris: #404040;
     --color-gris-oscuro: #0D0D0D;
+    /* Borde predeterminado */
+    --borde-chequeo: 1px solid tomato;
 }
 
 * {
@@ -161,15 +163,38 @@ button {
     background-color: burlywood; */
 }
 
-.grande { 
+
+.container-quienes-somos { 
+    padding: 75px 0;
+    background-color: var(--color-gris);
+    border: var(--borde-chequeo);
+}
+
+.container-quienes-somos > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25vw;
+    background-color: var(--color-gris-oscuro);
+    width: 50vw;
+    border-radius: 50px;
+
+}
+.container-quienes-somos > div > h2{
+    font-size: 3rem;
+}
+
+.container-quienes-somos > div > p{
     font-size: 1.2rem;
+    text-align: left;
+    margin: 50px;
+    
 }
 
-
-#quienes-somos { 
-    text-align: center;
-    padding: 100px 0
+.container-quienes-somos > div > .contenido-quienes-somos {
+    color: var(--color-casi-blanco);
 }
+
 
 #clientes {
     /* cambiar los colores del gradiente */
