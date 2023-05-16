@@ -85,7 +85,7 @@ button {
         "headline persona";
     /* grid-gap: 2rem; */
     border: 5px solid green;
-    background-color: #F2F2F2;
+    background-color: var(--color-casi-blanco);
 }
 
 .bienvenidos{
@@ -101,7 +101,7 @@ button {
     content: "éxito digital";
     font-weight: 900;
     font-style: italic;
-    color:#A7BF4E;
+    color: var(--color-verde-claro);
     text-decoration: underline;
 }
 
@@ -118,7 +118,7 @@ button {
     content: "vanguardia.";
     font-weight: 800;
     font-style: italic;
-    color:#A7BF4E;
+    color: var(--color-verde-claro);
 }
 
 
@@ -162,14 +162,15 @@ button {
     padding: 100px 0
 }
 
-#clientes { 
+#clientes {
+    /* cambiar los colores del gradiente */
     background-image: linear-gradient(to right, #404040, #404041);
     padding: 50px 0;
     width: auto;
     height: auto;
 }
 
-.carrousel { 
+.carrousel {
     float:left;
     width: 20%;
     text-align: center;
