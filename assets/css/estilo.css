@@ -164,7 +164,8 @@ button {
 }
 
 
-.container-quienes-somos { 
+.container-quienes-somos {
+    display: flex;
     padding: 75px 0;
     background-color: var(--color-gris);
     border: var(--borde-chequeo);
@@ -191,10 +192,17 @@ button {
     
 }
 
-.container-quienes-somos > div > .contenido-quienes-somos {
+.contenido-quienes-somos {
     color: var(--color-casi-blanco);
+    font-weight: 500;
 }
 
+/* .circulo {
+    position: relative;
+    width: 100px;
+    align-self: flex-end;
+    border: var(--borde-chequeo);
+} */
 
 #clientes {
     /* cambiar los colores del gradiente */
