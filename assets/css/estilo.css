@@ -237,22 +237,42 @@ background: black;
     border: var(--borde-chequeo);
 } */
 
-#clientes {
-    /* cambiar los colores del gradiente */
-    background-image: linear-gradient(to right, #404040, #404041);
-    padding: 50px 0;
-    width: auto;
-    height: auto;
+.clientestitulo{
+    display: flex;
+    justify-content: center;
 }
 
-.carrousel {
-    float:left;
-    width: 20%;
-    text-align: center;
+.carrousel{
+    width: 25%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.carrousel img { 
-    height: 120px;
+.carrousel ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 600%;
+}
+.carrousel li{
+    width: 100%;
+    list-style: none;
+}
+.carrousel img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
 }
 
 #servicios { 
