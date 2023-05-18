@@ -121,6 +121,7 @@ background: black;
     /* grid-gap: 2rem; */
     /* border: 5px solid green; */
     background-color: var(--color-casi-blanco);
+    
 }
 
 .titulo-headline{
@@ -154,7 +155,7 @@ background: black;
     margin-left: 10rem;  */
     font-weight: 400;
     font-size: 2rem;
-    border: 1px solid red;
+    
 }
 
 .markdig3::after{
