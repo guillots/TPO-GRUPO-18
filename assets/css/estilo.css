@@ -250,7 +250,7 @@ background: black;
 
 .carrousel ul{
     display: flex;
-    animation: cambio 20s infinite alternate linear;
+    animation: cambio 10s infinite alternate ease-in-out;
     width: 600%;
 }
 .carrousel li{
@@ -275,23 +275,53 @@ background: black;
     100%{margin-left: -300%;}
 }
 
-#servicios { 
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid #A7BF4E; */
+    border-top: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+  }
+  
+  #servicios h1 {
+    margin-bottom: 20px;
+    width: 100%;
     text-align: center;
-    padding: 100px 0;
-}
-
-#servicios h3{ 
-    padding-bottom: 40px;
-}
-
-#contacto { 
-    padding: 100px 0;
-}
-
-#contacto h3 { 
+    color: #404041;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .mosaico {
+    flex: 0 0 calc(50% - 20px);
+    background-color: #404041;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
-    padding-bottom: 50px;
-}
+    margin-bottom: 20px;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 2px solid #404041;
+  }
+  
+  .mosaico:hover {
+    background-color: #A7BF4E;
+    border-color: #A7BF4E;
+  }
+  
+  .mosaico h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .mosaico p {
+    margin-bottom: 0;
+  }
 
 form label { 
     display: inline-block;
@@ -318,3 +348,16 @@ footer {
     text-align: center;
     padding: 40px;
 }
+
+
+
+/* ::-webkit-scrollbar {
+    width: 1em !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gris-oscuro) !important;
+    outline: 0px solid #000000 !important;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .2) !important;
+} */
