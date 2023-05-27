@@ -63,8 +63,8 @@ header {
 }
 
 header.abajo {
-    background: #404040 ;
-    opacity: 0.7;
+    background: var(--color-gris) ;
+    /* opacity: 0.7; */
     padding: 15px 20px;
 }
 header > .logo-gral {
@@ -318,7 +318,7 @@ header ul li a:hover {
   
   .mosaico {
     flex: 0 0 calc(50% - 20px);
-    background-color: #404041;
+    background-color: var(--color-gris);
     color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -326,12 +326,12 @@ header ul li a:hover {
     margin-bottom: 20px;
     margin-right: 8px;
     transition: background-color 0.3s, border-color 0.3s;
-    border: 2px solid #404041;
+    border: 2px solid var(--color-gris);
   }
   
   .mosaico:hover {
-    background-color: #A7BF4E;
-    border-color: #A7BF4E;
+    background-color: var(--color-verde-oscuro);
+    border-color: var(--color-verde-oscuro);
   }
   
   .mosaico h3 {
