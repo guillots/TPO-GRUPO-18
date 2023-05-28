@@ -72,9 +72,9 @@ header {
     z-index: 10;
 }
 
-header.abajo {
-    background: var(--color-gris-oscuro) ;
-    /* opacity: 0.7; */
+.abajo {
+    background: var(--color-casi-blanco) ;
+    
     padding: 15px 20px;
 }
 
@@ -87,7 +87,7 @@ header.abajo {
 }
 
 .logo-palabra {
-    color: var(--color-casi-blanco);
+    color: var(--color-gris-oscuro);
     font-weight: bold;
     font-size: 2em;
     letter-spacing: 1px;
@@ -113,7 +113,6 @@ header ul li {
 
 header ul li a {
     position: relative;
-    font-family: Verdana;
     margin: 0 15px;
     text-decoration: none;
     color: grey;
@@ -126,14 +125,12 @@ header ul li a:hover {
     color: var(--color-casi-blanco);
 }
 
-.toma5 {
-    position: relative;
+header {
+    position: sticky;
     width: 100%;
     height: 15vh;
-    background-color: var(--color-gris);
+    background-color: var(--color-casi-blanco);
     background-position: center center;
-
-
 }
 
 .container{
@@ -432,9 +429,114 @@ footer > div > a {
     outline: none;
   }
 
-@media screen and (max-width: 640px) {
+
+
+
+@media (max-width: 520px) {
+
+    .persona {
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        /* border: var(--borde-chequeo); */
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+    }
        
-    nav ul {
+    .bienvenidos{    
+        
+        /* margin-left: 2rem; */
+        font-size: 2rem;
+        /* border: 1px solid red;
+        background-color: #404041; */
+         
+    }
+    
+    .bienvenidos::after{
+        content: "éxito digital";
+        font-weight: 900;
+        font-style: italic;
+        color: var(--color-verde-oscuro);
+        text-decoration: underline;
+    }
+    
+    .headline {
+        /* grid-area: headline;    
+        margin-left: 10rem;  */
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: left;
+        
+    }
+    
+    .markdig3::after{
+        content: "vanguardia.";
+        font-weight: 800;
+        font-style: italic;
+        color: var(--color-verde-oscuro);
+        text-decoration: underline;
+    }
+
+
+
+    /*------------------------------------------*/
+    .container-quienes-somos {
+      flex-direction: column;
+      padding: 50px 0;
+    }
+  
+    .container-quienes-somos > div {
+        background-color: #404040;
+      margin: auto;
+      width: 100%;
+      border: 2px solid #000000;
+	    border-radius: 10px;
+    }
+  
+    .container-quienes-somos > div > p {
+        text-align: center;
+        padding: 10px;
+        border: 2px solid #D4F266;
+	border-radius: 10px;
+    }
+    
+
+    /*------------------------------------------*/
+
+    header {
+        padding: 10px;
+      }
+    
+      header.abajo {
+        padding: 10px;
+      }
+    
+      .logo-gral {
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .logo-palabra {
+        font-size: 1.5em;
+      }
+    
+      header ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    
+      header ul li a {
+        margin: 0;
+        font-size: 1em;
+      }
+      nav ul {
+        
         display: none;
         flex-direction: column;
         width: 100%;
@@ -445,15 +547,56 @@ footer > div > a {
       }
       
       .my-button {
+        border: 2px solid #D4F266;
+	    border-radius: 10px;
         display: flex;
         color: var(--color-casi-blanco);
       }
-        nav {
-            background-color: var(--color-gris);
-        }
 
+      /*-----------------------------------*/
 
-    .titulo-headline{
-       font-size: 1rem;
-    }
-}
+      #servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      
+      #servicios > h1 {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: var(--color-gris-oscuro);
+        letter-spacing: 1px;
+        font-size: var(--tamano-titulo);
+      }
+      
+      .mosaico {
+        flex: 0 0 100%;
+        background-color: var(--color-gris);
+        color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: background-color 0.3s, border-color 0.3s;
+        border: 2px solid var(--color-gris);
+      }
+      
+      .mosaico:hover {
+        background-color: var(--color-verde-oscuro);
+        border-color: var(--color-verde-oscuro);
+      }
+      
+      .mosaico h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .mosaico p {
+        margin-bottom: 0;
+      }
+
+  }
