@@ -14,14 +14,7 @@
     
 }
 
-/* #010404
-#e9f8fc
-#99def0
-#ffffff
-#83d7ec */
-
-
-
+/* GRAL */
 * {
     padding: 0;
     margin: 0;
@@ -60,6 +53,19 @@ button {
     padding: 12px 20px;
 }
 
+::-webkit-scrollbar {
+    width: 1em !important;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gris-oscuro) !important;
+    outline: 0px solid #000000 !important;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, .2) !important;
+}
+/* ------------------------------ */
+
+/* HEADER NAV */
 header {
     position: fixed;
     top: 0;
@@ -122,7 +128,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: var(--color-casi-blanco);
+    color: var(--color-gris-oscuro);
 }
 
 header {
@@ -132,7 +138,9 @@ header {
     background-color: var(--color-casi-blanco);
     background-position: center center;
 }
+/* ------------------------------ */
 
+/* HERO */
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,28 +199,6 @@ header {
 }
 
 
-/* .markdig1{
-  
-    background-color: bisque;
-    grid-area: markdig1;
-    border: 1px solid red;
-    font-size: 1rem;
-}
-.markdig2{
- 
-    background-color: bisque;
-    grid-area: markdig2;
-    border: 1px solid red;
-    font-size: 1rem;
-}
-.markdig3{
- 
-    background-color: bisque;
-    grid-area: markdig3;
-    border: 1px solid red;
-    font-size: 1rem;
-} */
-
 .persona{
     grid-area: persona;
     height: 50vh;
@@ -220,11 +206,13 @@ header {
     /* border: 1px solid red;
     background-color: burlywood; */
 }
+/* ------------------------------ */
 
+/* QUIENES SOMOS */
 
 .container-quienes-somos {
     display: flex;
-    padding: 75px 0;
+    padding: 50px 0;
     background-color: var(--color-gris);
     /* border: var(--borde-chequeo); */
 }
@@ -233,9 +221,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 25vw;
-    background-color: var(--color-gris-oscuro);
-    width: 50vw;
+    margin: auto;
+    background-color: var(--color-gris);
+    width: 75%;
     border-radius: 50px;
     box-shadow: 1px 1px 50px var(--color-gris-oscuro);
 
@@ -249,7 +237,9 @@ header {
 .container-quienes-somos > div > p{
     font-size: 1.2rem;
     text-align: left;
+    padding: 10px;
     margin: 35px;
+    border-radius: 10px;
     
 }
 
@@ -264,46 +254,11 @@ header {
     align-self: flex-end;
     border: var(--borde-chequeo);
 } */
+/* ------------------------------ */
 
-.clientestitulo{
-    display: flex;
-    justify-content: center;
-    font-size: var(--tamano-titulo);
-}
 
-.carrousel{
-    width: 25%;
-    margin: auto;
-    overflow: hidden;
-}
 
-.carrousel ul{
-    display: flex;
-    animation: cambio 10s infinite alternate ease-in-out;
-    width: 600%;
-}
-.carrousel li{
-    width: 100%;
-    list-style: none;
-}
-.carrousel img{
-    width: 100%;
-    height: 100%;
-}
-@keyframes cambio{
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-    
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-    
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-    
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
+/* SERVICIOS */
 #servicios {
     display: flex;
     flex-wrap: wrap;
@@ -351,7 +306,51 @@ header {
   .mosaico p {
     margin-bottom: 0;
   }
+/* ------------------------------ */
 
+/* NUESTROS CLIENTES */
+.clientestitulo{
+    display: flex;
+    justify-content: center;
+    font-size: var(--tamano-titulo);
+}
+
+.carrousel{
+    width: 15%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrousel ul{
+    display: flex;
+    animation: cambio 10s infinite alternate ease-in-out;
+    width: 600%;
+}
+.carrousel li{
+    width: 100%;
+    list-style: none;
+}
+.carrousel img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/* ------------------------------ */
+
+
+/* FORMULARIO */
 form label { 
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -382,7 +381,9 @@ form .form-control {
     display: flex;
     justify-content: center;
 }
+/* ------------------------------ */
 
+/* FOOTER */
 footer { 
     display: flex;
     justify-content: center;
@@ -396,19 +397,11 @@ footer > div > a {
     color: var(--color-casi-blanco);
 }
 
-
-
-::-webkit-scrollbar {
-    width: 1em !important;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--color-gris-oscuro) !important;
-    outline: 0px solid #000000 !important;
-}
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px rgba(0, 0, 0, .2) !important;
-}
-
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
 
 
 /* MOBILE */
@@ -429,21 +422,216 @@ footer > div > a {
     outline: none;
   }
 
+@media (max-width: 506px) {
+
+    /* .persona {      
+      animation: 1s slideout;
+      z-index: -1;
+    }
+
+    @keyframes slideout {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(1000px);
+      }
+      
+    } */
+    
+    
+    .persona {      
+      display: none;
+  }
+    
+    .container{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: var(--borde-chequeo); */
+        margin-top: %;
+        margin-bottom: 5%;
+        
+
+    }
+       
+    .titulo-headline{
+      font-size: 1.5em;
+    }
+   
+    
+    .bienvenidos::after{
+        content: "éxito digital";
+        font-weight: 900;
+        font-style: italic;
+        color: var(--color-verde-oscuro);
+        text-decoration: underline;
+    }
+    
+    .headline {
+        /* grid-area: headline;    
+        margin-left: 10rem;  */
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: left;
+        
+    }
+    
+    .markdig3::after{
+        content: "vanguardia.";
+        font-weight: 800;
+        font-style: italic;
+        color: var(--color-verde-oscuro);
+        text-decoration: underline;
+    }
 
 
 
-@media (max-width: 520px) {
+    /*------------------------------------------*/
+    .container-quienes-somos {
+      flex-direction: column;
+      padding: 30px 0;
+      opacity: 100%;
+      transition: 1s;
+    }
+  
+    .container-quienes-somos > div {
+      background-color: var(--color-gris);
+      margin: auto;
+      width: 95%;
+      /* border: 2px solid #000000; */
+	    border-radius: 10px;
+    }
+
+    .container-quienes-somos > div > h2 {
+      text-align: center;
+      /* border: 2px solid var(--color-verde-claro); */      
+  }
+  
+    .container-quienes-somos > div > p {
+        text-align: center;
+        padding: 10px;
+        /* border: 2px solid var(--color-verde-claro); */
+	      border-radius: 10px;
+        font-size: 0.9em;
+    }
+
+  
+    
+
+    /*------------------------------------------*/
+
+    header {
+        padding: 10px;
+      }
+    
+      header.abajo {
+        padding: 10px;
+      }
+    
+      .logo-gral {
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+    
+      .logo-palabra {
+        font-size: 1.5em;
+      }
+    
+      header ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    
+      header ul li a {
+        margin: 0;
+        font-size: 1em;
+      }
+      nav ul {        
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      nav ul .show {
+        display: flex;
+      }
+      
+      .my-button {
+        border: 2px solid var(--color-verde-claro);
+	      border-radius: 10px;
+        display: flex;
+        color: var(--color-gris-oscuro);
+      }
+
+      /*-----------------------------------*/
+
+      #servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      
+      #servicios > h1 {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: var(--color-gris-oscuro);
+        letter-spacing: 1px;
+        font-size: var(--tamano-titulo);
+      }
+      
+      .mosaico {
+        flex: 0 0 100%;
+        background-color: var(--color-gris);
+        color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+        transition: background-color 0.3s, border-color 0.3s;
+        border: 2px solid var(--color-gris);
+      }
+      
+      .mosaico:hover {
+        background-color: var(--color-verde-oscuro);
+        border-color: var(--color-verde-oscuro);
+      }
+      
+      .mosaico h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .mosaico p {
+        margin-bottom: 0;
+      }
+
+  }
+
+
+  /* TABLET */
+
+@media (max-width: 1024px) {
 
     .persona {
-        display: none;
+      height: 25vh;
+      transition: 0.5s ease-in-out;
+      /* border: var(--borde-chequeo); */
     }
     
     .container{
         display: flex;
         align-items: center;
         /* border: var(--borde-chequeo); */
-        margin-top: 5%;
-        margin-bottom: 5%;
+
 
     }
        
@@ -486,22 +674,24 @@ footer > div > a {
     /*------------------------------------------*/
     .container-quienes-somos {
       flex-direction: column;
-      padding: 50px 0;
+      padding: 30px 0;
+      opacity: 100%;
+      transition: 1s;
     }
   
     .container-quienes-somos > div {
-        background-color: #404040;
+      background-color: var(--color-gris);
       margin: auto;
-      width: 100%;
-      border: 2px solid #000000;
+      width: 95%;
+      /* border: 2px solid #000000; */
 	    border-radius: 10px;
     }
   
     .container-quienes-somos > div > p {
         text-align: center;
         padding: 10px;
-        border: 2px solid #D4F266;
-	border-radius: 10px;
+        /* border: 2px solid var(--color-verde-claro); */
+	      border-radius: 10px;
     }
     
 
@@ -547,10 +737,10 @@ footer > div > a {
       }
       
       .my-button {
-        border: 2px solid #D4F266;
+        border: 2px solid var(--color-verde-claro);
 	    border-radius: 10px;
         display: flex;
-        color: var(--color-casi-blanco);
+        color: var(--color-gris-oscuro);
       }
 
       /*-----------------------------------*/
