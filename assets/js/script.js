@@ -14,6 +14,7 @@ var form = document.getElementById('contact-form');
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
+      
       form.reset();
       alert('Mensaje enviado. Nos contactaremos a la brevedad')
     });

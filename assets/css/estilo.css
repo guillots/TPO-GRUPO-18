@@ -351,7 +351,8 @@ header {
 
 
 /* FORMULARIO */
-form label { 
+
+/* form label { 
     display: inline-block;
     margin-bottom: 0.5rem;
 }
@@ -380,7 +381,7 @@ form .form-control {
     font-size: var(--tamano-titulo);
     display: flex;
     justify-content: center;
-}
+} */
 /* ------------------------------ */
 
 /* FOOTER */
@@ -402,6 +403,72 @@ footer > div > a {
 /* ------------------------------ */
 /* ------------------------------ */
 /* ------------------------------ */
+
+#contacto { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: var(--color-casi-blanco);
+  /* margin: auto; */
+  /* width: 100%;
+  max-width: 500px; */
+  padding: 4.5em 2em;
+  text-align: center;
+} 
+
+.contactotitulo {
+  font-size: 2rem;
+  /* border: var(--borde-chequeo); */
+}
+
+.formgroup {
+  margin-top: 3em;
+  gap: 2.5em;
+}
+
+.form-contenedor {
+  position: relative;
+  color: var(--color-verde-oscuro);
+}
+
+.forminput {
+  width: 100%;
+  background: none;
+  color: var(--color-gris);
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-gris-oscuro);
+  font-family: 'Inter', sans-serif;
+}
+
+.formlabel {
+  color: var (--color-gris);
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s color .3s;
+}
+
+input#botoncito {
+  background: var(--color-gris);
+  color: var(--color-verde-claro);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 250;
+  font-size: 1em;
+  margin: 15px;
+  padding: .5em 5em;
+  border: none;
+  border-radius: .5em;
+}
+
+#botoncito:hover {
+  background-color: var(--color-gris-oscuro);
+}
 
 
 /* MOBILE */
