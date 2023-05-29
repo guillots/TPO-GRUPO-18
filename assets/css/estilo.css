@@ -350,7 +350,7 @@ header {
 /* ------------------------------ */
 
 
-/* FORMULARIO */
+/* FORMULARIO  OLD*/
 
 /* form label { 
     display: inline-block;
@@ -384,25 +384,7 @@ form .form-control {
 } */
 /* ------------------------------ */
 
-/* FOOTER */
-footer { 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 40px;
-    color: var(--color-casi-blanco);
-    background-color: var(--color-gris-oscuro);
-}
-
-footer > div > a {
-    color: var(--color-casi-blanco);
-}
-
-/* ------------------------------ */
-/* ------------------------------ */
-/* ------------------------------ */
-/* ------------------------------ */
-/* ------------------------------ */
+/* FORMULARIO */
 
 #contacto { 
   display: flex;
@@ -469,6 +451,29 @@ input#botoncito {
 #botoncito:hover {
   background-color: var(--color-gris-oscuro);
 }
+
+
+/* FOOTER */
+footer { 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    color: var(--color-casi-blanco);
+    background-color: var(--color-gris-oscuro);
+}
+
+footer > div > a {
+    color: var(--color-casi-blanco);
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
 
 
 /* MOBILE */
