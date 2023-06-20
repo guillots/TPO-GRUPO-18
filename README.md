@@ -33,5 +33,3 @@ Proyecto creado por:
 - Guillermo Lovento
 - Sol Rossi Illana
 
-## Tenemos la licencia de la web :P ##
-
